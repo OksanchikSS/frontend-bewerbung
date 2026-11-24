@@ -127,12 +127,12 @@ footer {
             transparent 45%
         ),
         linear-gradient(
-            120deg,
-            #f5bfd5 0%,
-            #f5dce8 42%,
-            #dcecf8 70%,
-            #b8e5fa 100%
-        );
+             120deg,
+             #ffc1b5 0%,
+             #ffe0d5 42%,
+             #dcecf8 70%,
+             #b8e5fa 100%
+         );
 
     color: var(--ink);
     border-radius: 32px;
