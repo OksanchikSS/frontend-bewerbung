@@ -226,8 +226,9 @@ footer {
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
   align-items: center;
   gap: 32px;
-  padding: clamp(28px, 4vw, 48px);
+  padding: 24px 48px;
   min-height: 440px;
+  box-sizing: border-box;
   background:
     radial-gradient(
       ellipse at 5% 100%,
