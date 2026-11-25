@@ -651,41 +651,44 @@ footer a:hover {
 
 /* Print version */
 @media print {
-  body {
-    background: white;
-    color: black;
+  @page {
+    size: A4;
+    margin: 10mm;
   }
-  
-  .bar,
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bar {
+    position: static;
+  }
+
   .hero,
-  .facts,
-  footer,
+  .facts {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   .skip {
     display: none;
-  }
-  
-  main,
-  article {
-    max-width: none;
-    padding: 0;
-    border: 0;
   }
 
   section {
     break-inside: auto;
   }
 
-  h2 {
+  h2,
+  h3 {
     break-after: avoid;
-    color: black;
   }
 
-  article p {
-    font-size: 11pt;
-    line-height: 1.5;
+  p {
+    orphans: 3;
+    widows: 3;
   }
 }
-
 @media (max-width: 900px) {
   .hero {
     text-align: center;
